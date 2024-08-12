@@ -62,20 +62,21 @@ class _homePageState extends State<homePage> {
         );
 
       }  ),
-      floatingActionButton: Row(
-        children: [
-          Expanded(
-            child:Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 25,
-              ),
-              child: TextField(
-                controller: _controller,
-                decoration: InputDecoration(
-                  hintText: 'Add a new task',
-                  filled: true,
-                  fillColor: Colors.deepPurple.shade200,
-                  enabledBorder: OutlineInputBorder(
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.symmetric(horizontal:10 , vertical:10),
+          child: Row(
+            children:[
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25,
+                  ),
+                  child: TextField(
+                    controller: _controller,
+                    decoration: InputDecoration(
+                    hintText: 'Add a new task',
+                    filled: true,
+                    fillColor: Colors.deepPurple.shade200,
+                    enabledBorder: OutlineInputBorder(
                     borderSide: const BorderSide(
                       color: Colors.white,
                     ),
@@ -97,8 +98,8 @@ class _homePageState extends State<homePage> {
               ),
             ],
           ),
-
-      );
+      ),
+    );
 
   }
 }
